@@ -78,17 +78,36 @@ Project được thiết kế phục vụ:
 # 📂 Cấu trúc Project
 
 ```bash
-vbhc-ocr-extractor/
+vbhc-ai-pro/
 │
-├── ocr/
-├── validation/
-├── extraction/
-├── nlp/
-├── api/
-├── templates/
-├── datasets/
-├── outputs/
-└── README.md
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── UploadBox.jsx
+│   │   ├── OCRPreview.jsx
+│   │   ├── ResultPanel.jsx
+│   │   ├── Header.jsx
+│   │   └── LoadingBar.jsx
+│   │
+│   ├── services/
+│   │   ├── ocrService.js
+│   │   ├── pdfService.js
+│   │   ├── aiService.js
+│   │   └── firebaseService.js
+│   │
+│   ├── styles/
+│   │   └── app.css
+│   │
+│   ├── firebase.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── tailwind.config.js
+├── vite.config.js
+├── package.json
+└── index.html
 ```
 
 ---
